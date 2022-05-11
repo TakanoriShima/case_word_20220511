@@ -12,11 +12,7 @@
         <!-- Favicon -->
         <link rel="icon" href="{{ asset('/images/favicon_heart.ico') }}">
         <title>@yield('title')</title>
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <!-- Original JavaScript -->
-        <script src="{{ asset('/js/script.js') }}"></script>
+        
     </head>
     <body>
         @if(Auth::check())
@@ -47,5 +43,10 @@
             @include('commons.error_messages')
             @yield('content')
         </div>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- Original JavaScript -->
+        <script src="{{ asset('/js/script.js') }}"></script>
     </body>
 </html>
